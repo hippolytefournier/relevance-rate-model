@@ -52,6 +52,7 @@ Daily life (`rrm/scenarios.py`): night at 0.2 events/min, then waking hours alte
 | C8 | A raised habitual expectation produces a mismatch with no recent session | ✓ | 0.37 vs 0.04 on waking, after 14 days of 16 × 10 min | ✓ |
 | C9 | This persistence fades over days when use stops | ✓ | half-recovery 2.4 days | ✓ |
 | C10 | The downward weight does not hold the expectation down during use | | 99% of the stream's rate after 60 min | ✓ |
+| C12 | The after-effect is larger than the mismatch produced by a raised habitual expectation | | same window (13:00-13:30, calm): 3.93 after one 10-min session vs 0.90 on the first day without use after 14 days of 16 × 10 min | ✓ |
 | P1 | A higher within-session relevance rate raises the habitual expectation | | 1.29 / 2.03 / 3.46 for streams at 4 / 8 / 16 | ✓ |
 | P2 | Ordinary sessions already reach the ceiling | | a 10-min session reaches the level of a 40-min one | ✓ |
 | P3 | At equal total time, fragmentation raises the habitual expectation, up to a ceiling | | 1.79 / 2.06 / 2.94 / 3.11 for 1 × 160, 4 × 40, 16 × 10, 32 × 5 min | ✓ |
@@ -75,7 +76,7 @@ Claims taken one at a time mostly hold. **Jointly, they hold only within a regio
 | and surprise threshold ≥ × 0.8 | 14 / 20 |
 | and surprise smoothing ≤ × 1.4 | 12 / 16 (75%) |
 
-All 18 claims hold jointly in 14% of random settings. The conditions have a reading:
+All 19 claims hold jointly in 14% of random settings. The conditions have a reading:
 
 - **The after-effect (C4, C4b) requires a low `w1_low`.** Concern relevance must keep the current expectation precise. 100% of settings pass below the reference, against 41-48% above.
 - **The absence of noise inflation (S1, 55% of settings) requires that `w1_low` not be too low, and that the surprise detector rarely fire by chance.** 78% of settings pass above the reference threshold, 31% below. With a low `w1_low`, each false alarm lasts longer. Persistence and accuracy therefore pull `w1_low` in opposite directions.
@@ -100,7 +101,7 @@ All 18 claims hold jointly in 14% of random settings. The conditions have a read
 
 ![Dynamics](outputs/figures/fig1_dynamics.png)
 
-Fig. 3 of the manuscript (file `fig1_dynamics`). A and B show the current expectation, which follows the stream within a session. C and D show the habitual expectation, to which each session adds only a little (dotted line in A).
+Fig. 3 of the manuscript (file `fig1_dynamics`). In the manuscript, the panel titles are reduced to their letters; the figure is otherwise identical. A and B show the current expectation, which follows the stream within a session. C and D show the habitual expectation, to which each session adds only a little (dotted line in A).
 
 - **A**, one 10-min session followed by a calm activity (C3, C4, C5).
 - **B**, single sessions of 160, 40, 10 and 5 min, aligned on their end and followed by the same calm activity: the length of the session barely changes the after-effect (P2).

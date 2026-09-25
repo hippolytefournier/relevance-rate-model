@@ -140,6 +140,15 @@ def evaluate(p=Params(), n_seeds=8):
     claim("C8", "Box 3, Persistence", "A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",
           "after 14 days of 16 x 10 min/day, mismatch index on waking (before any session) > 2 x no-use and > 0.1 events/min",
           f"{mmH:.2f} vs {mmN:.2f} events/min", mmH > 2 * mmN and mmH > 0.1)
+    # after-effect versus raised habitual expectation, on the same window (first 30 min of a calm activity)
+    lamS = day(SESSION_INTO_CALM); mS_all, _, _ = run(p, lamS, init, n_seeds)
+    win = np.zeros(DAY, bool); win[780:810] = True
+    mm_after = mismatch(lamS, mS_all, win)
+    winH = np.zeros(lamH.size, bool); winH[14 * DAY + 780:14 * DAY + 810] = True
+    mm_hab = mismatch(lamH, mH_all, winH)
+    claim("C12", "Main text, From persistence to relevance-rate mismatch", "The after-effect is the larger, so that the mismatch is strongest in the period that follows use and weaker, though more enduring, in its absence.",
+          "same window (13:00-13:30, calm): mismatch index after one 10-min session with no prior pattern > on the first day without use after 14 days of 16 x 10 min/day",
+          f"after-effect {mm_after:.2f} vs habitual {mm_hab:.2f} events/min", mm_after > mm_hab)
     end_use = 14 * DAY - 1; rise_amt = bH[end_use] - bN[end_use]
     t_half_dn = half_time(bH[14 * DAY:] - bN[14 * DAY:], 0.5 * rise_amt)
     calm = lambda k: np.r_[np.zeros(k * DAY, bool), day() == CALM, np.zeros(lamH.size - (k + 1) * DAY, bool)]

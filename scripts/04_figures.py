@@ -102,7 +102,7 @@ SHORT = {"C1": "Current expectation tracks the activity", "C2": "Habitual lies b
          "C4b": "Denser streams do not shorten the after-effect", "C5": "Mismatch larger if next activity is calm",
          "C6": "Each session adds a little to habitual", "C7": "Habitual rises with the number of sessions",
          "C8": "Mismatch with no recent session", "C9": "Persistence fades over days when use stops",
-         "C10": "No sag of expectation during long use", "P1": "Within-session rate raises habitual",
+         "C10": "No sag of expectation during long use", "C12": "After-effect larger than habitual mismatch", "P1": "Within-session rate raises habitual",
          "P2": "Ordinary sessions reach the ceiling", "P3": "Fragmentation raises habitual (up to a ceiling)",
          "P4": "Chronicity raises habitual, then saturates", "P5": "Fragmentation raises the all-day mean",
          "core_joint": "Core claims jointly (S1 C3 C4 C4b C7 C8 C9)", "all_joint": "All claims jointly"}

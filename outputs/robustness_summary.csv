@@ -10,6 +10,7 @@ C5,claim,The mismatch is largest when the next activity is calm.,1.0,none
 C6,claim,Each session adds a little to the habitual expectation.,0.719,w1_low x0.5; w1_high x2.0; w2 x2.0
 C7,claim,The habitual expectation rises over days with the number of sessions.,1.0,none
 C8,claim,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",0.859,w1_low x2.0; surprise_threshold x0.5; surprise_smoothing x2.0
+C12,claim,"The after-effect is the larger, so that the mismatch is strongest in the period that follows use and weaker, though more enduring, in its absence.",1.0,none
 C9,claim,"This persistence fades when the pattern of use changes, over days rather than minutes.",1.0,none
 C10,claim,"The downward weight is smaller in dense activities, so the habitual expectation does not hold the current one down during use.",0.969,none
 P1,claim,A higher within-session relevance rate raises the habitual expectation.,1.0,none

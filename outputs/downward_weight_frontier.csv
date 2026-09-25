@@ -1,8 +1,8 @@
 downward_weight,c8_mismatch_no_session,c8_same_without_use,c10_expectation_after_60min_pct,all_claims_passed
-fixed 0.0040,0.06,0.25,95.0,17
-fixed 0.0070,0.16,0.16,91.0,17
-fixed 0.0100,0.27,0.11,87.0,17
-fixed 0.0130,0.37,0.09,83.0,17
-fixed 0.0167,0.47,0.1,79.0,17
-fixed 0.0250,0.67,0.06,76.0,15
-precision-weighted (reference),0.37,0.04,99.0,18
+fixed 0.0040,0.06,0.25,95.0,18
+fixed 0.0070,0.16,0.16,91.0,18
+fixed 0.0100,0.27,0.11,87.0,18
+fixed 0.0130,0.37,0.09,83.0,18
+fixed 0.0167,0.47,0.1,79.0,18
+fixed 0.0250,0.67,0.06,76.0,16
+precision-weighted (reference),0.37,0.04,99.0,19
