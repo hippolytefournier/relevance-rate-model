@@ -1,0 +1,21 @@
+id,kind,statement,pass_rate_random,one_at_a_time_failures
+C1,claim,"The current expectation concerns the ongoing activity (low in calm, higher in dense activities).",1.0,none
+C2,claim,The habitual expectation concerns daily life as a whole.,1.0,none
+S1,sanity,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,0.547,w1_low x0.5; surprise_threshold x0.5; surprise_smoothing x2.0
+C11,claim,"A calm activity may fall slightly short of what is expected, even without social media use.",1.0,none
+C3,claim,"Entering the stream is highly surprising, so the current expectation quickly approaches the stream's rate (calibration).",0.984,w1_high x0.5
+C4,claim,"After the stream is left, the current expectation falls back only gradually (after-effect).",0.766,w1_low x2.0
+C4b,claim,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",0.734,w1_low x2.0
+C5,claim,The mismatch is largest when the next activity is calm.,1.0,none
+C6,claim,Each session adds a little to the habitual expectation.,0.719,w1_low x0.5; w1_high x2.0; w2 x2.0
+C7,claim,The habitual expectation rises over days with the number of sessions.,1.0,none
+C8,claim,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",0.859,w1_low x2.0; surprise_threshold x0.5; surprise_smoothing x2.0
+C9,claim,"This persistence fades when the pattern of use changes, over days rather than minutes.",1.0,none
+C10,claim,"The downward weight is smaller in dense activities, so the habitual expectation does not hold the current one down during use.",0.969,none
+P1,claim,A higher within-session relevance rate raises the habitual expectation.,1.0,none
+P2,claim,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,0.812,w1_high x0.5; surprise_threshold x2.0
+P3,claim,"At equal total time, fragmentation raises the habitual expectation (up to a ceiling).",1.0,none
+P4,claim,"Chronicity raises the habitual expectation, which then saturates.",1.0,none
+P5,claim,"At equal total time, fragmented use raises the current expectation averaged over the whole day.",0.984,none
+core_joint,joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",0.312,w1_low x0.5; w1_low x2.0; w1_high x0.5; surprise_threshold x0.5; surprise_smoothing x2.0
+all_joint,joint,All claims jointly,0.141,w1_low x0.5; w1_low x2.0; w1_high x0.5; w1_high x2.0; surprise_threshold x0.5; surprise_threshold x2.0; surprise_smoothing x2.0; w2 x2.0

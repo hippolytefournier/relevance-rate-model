@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript it supports."
+title: "Relevance Rate Model: simulations of Box 3 and Fig. 3"
+authors:
+  - family-names: Fournier
+    given-names: Hippolyte
+    affiliation: "Institute of Psychology, University of Lausanne"
+version: 1.0.0
+date-released: 2026-09-24
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Relevance Rate Model of the affective mechanisms linking social media use to later attentional disruption"
+  authors:
+    - family-names: Fournier
+      given-names: Hippolyte
+    - family-names: Pool
+      given-names: Eva R.
+    - family-names: Sander
+      given-names: David
+    - family-names: Dan-Glauser
+      given-names: Elise
+  status: preprint

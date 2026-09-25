@@ -1,0 +1,6 @@
+model,passed,of,failed,noise_inflation,fall_8,fall_by_rate,no_session_mismatch
+Reference (Box 3),18,18,none,ratio 1.071,19 min,4: 18 min / 16: 19 min / 32: 20 min,0.38 vs 0.05 events/min
+A1 sign-dependent learning rate,13,18,C2 S1 C4b C6 C8,ratio 1.900,16 min,4: 14 min / 16: 18 min / 32: 19 min,1.02 vs 0.90 events/min
+"A2 long-window surprise, both directions",12,18,S1 C4 C4b C6 C8 P5,ratio 1.187,2 min,4: 4 min / 16: 1 min / 32: 1 min,0.23 vs 0.12 events/min
+A3 surprise speeds up decreases too,17,18,C4b,ratio 1.052,19 min,4: 18 min / 16: 8 min / 32: 1 min,0.36 vs 0.05 events/min
+A4 no downward prediction,15,18,S1 C6 C8,ratio 1.108,20 min,4: 20 min / 16: 20 min / 32: 20 min,0.08 vs 0.32 events/min

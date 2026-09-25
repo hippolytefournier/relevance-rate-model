@@ -1,0 +1,57 @@
+id,statement,parameter,pass_rate_below_reference,pass_rate_above_reference,difference
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,w1_low,0.34,0.79,0.45
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,w1_high,0.67,0.42,-0.25
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,surprise_threshold,0.31,0.78,0.47
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,surprise_smoothing,0.73,0.35,-0.37
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,w_down0,0.58,0.5,-0.08
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,mu_star,0.5,0.57,0.07
+S1,Poisson noise does not inflate the expectation (false alarms of the surprise rule stay rare).,w2,0.61,0.48,-0.13
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",w1_low,1.0,0.48,-0.52
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",w1_high,0.73,0.81,0.08
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",surprise_threshold,0.75,0.78,0.03
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",surprise_smoothing,0.73,0.81,0.08
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",w_down0,0.87,0.62,-0.25
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",mu_star,0.79,0.75,-0.04
+C4,"After the stream is left, the current expectation falls back only gradually (after-effect).",w2,0.74,0.79,0.05
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",w1_low,1.0,0.41,-0.59
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",w1_high,0.67,0.81,0.14
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",surprise_threshold,0.72,0.75,0.03
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",surprise_smoothing,0.7,0.77,0.08
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",w_down0,0.84,0.58,-0.27
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",mu_star,0.75,0.72,-0.03
+C4b,"Leaving the stream is surprising too, but this does not speed up the fall: a denser stream does not shorten the after-effect.",w2,0.74,0.73,-0.01
+C6,Each session adds a little to the habitual expectation.,w1_low,0.6,0.86,0.26
+C6,Each session adds a little to the habitual expectation.,w1_high,0.88,0.55,-0.33
+C6,Each session adds a little to the habitual expectation.,surprise_threshold,0.75,0.69,-0.06
+C6,Each session adds a little to the habitual expectation.,surprise_smoothing,0.76,0.68,-0.08
+C6,Each session adds a little to the habitual expectation.,w_down0,0.68,0.77,0.09
+C6,Each session adds a little to the habitual expectation.,mu_star,0.62,0.78,0.15
+C6,Each session adds a little to the habitual expectation.,w2,0.97,0.48,-0.48
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",w1_low,0.91,0.79,-0.12
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",w1_high,0.88,0.84,-0.04
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",surprise_threshold,0.72,1.0,0.28
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",surprise_smoothing,0.91,0.81,-0.1
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",w_down0,0.84,0.88,0.04
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",mu_star,0.79,0.9,0.11
+C8,"A raised habitual expectation holds the current expectation above what calm activities deliver, even with no recent session.",w2,0.9,0.82,-0.09
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,w1_low,0.89,0.72,-0.16
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,w1_high,0.67,0.97,0.3
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,surprise_threshold,0.97,0.66,-0.31
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,surprise_smoothing,0.73,0.9,0.18
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,w_down0,0.79,0.85,0.06
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,mu_star,0.83,0.8,-0.03
+P2,Session length raises the expectation until a ceiling that sessions of ordinary duration already reach.,w2,0.74,0.88,0.14
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",w1_low,0.31,0.31,-0.0
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",w1_high,0.33,0.29,-0.04
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",surprise_threshold,0.12,0.5,0.38
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",surprise_smoothing,0.36,0.26,-0.11
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",w_down0,0.39,0.19,-0.2
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",mu_star,0.29,0.33,0.03
+core_joint,"All core claims jointly (S1, C3, C4, C4b, C7, C8, C9)",w2,0.35,0.27,-0.08
+all_joint,All claims jointly,w1_low,0.11,0.17,0.06
+all_joint,All claims jointly,w1_high,0.15,0.13,-0.02
+all_joint,All claims jointly,surprise_threshold,0.06,0.22,0.16
+all_joint,All claims jointly,surprise_smoothing,0.15,0.13,-0.02
+all_joint,All claims jointly,w_down0,0.13,0.15,0.02
+all_joint,All claims jointly,mu_star,0.08,0.17,0.09
+all_joint,All claims jointly,w2,0.26,0.03,-0.23

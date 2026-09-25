@@ -1,0 +1,12 @@
+{
+  "w1_low": 0.05,
+  "w1_high": 0.7,
+  "surprise_threshold": 10.0,
+  "surprise_smoothing": 0.3,
+  "w_down0": 0.05,
+  "mu_star": 0.25,
+  "w2": 0.0002314814814814815,
+  "dt": 1.0,
+  "surprise_mode": "increase",
+  "precision_down": true
+}

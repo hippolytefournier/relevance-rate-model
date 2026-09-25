@@ -1,0 +1,5 @@
+python 3.11.15
+numpy 2.4.4
+matplotlib 3.10.9
+platform Linux-6.18.44-fc-v42-x86_64-with-glibc2.39
+runtime 377 s

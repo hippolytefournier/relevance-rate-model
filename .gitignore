@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.venv/
+.ipynb_checkpoints/
+
+# manuscript-only figure (local use, not pushed)
+scripts/04_figures_manuscript.py
+outputs/figures/*_manuscript.*
