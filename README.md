@@ -17,6 +17,29 @@ $$\delta_{1,t} = R_t - \mu_{1,t}, \qquad \delta_{2,t} = \mu_{1,t} - \mu_{2,t}, \
 
 $$\mu_{1,t+1} = \mu_{1,t} + w_1\,\delta_{1,t} - w_{\downarrow}\,\delta_{2,t}$$
 
+**Why the same error appears twice.** The two updates are the standard two-level form of
+precision-weighted predictive coding, not an additional assumption. For a hierarchical
+Gaussian model in which $R_t$ is generated around $\mu_1$ with precision $\pi_1$, and
+$\mu_1$ around $\mu_2$ with precision $\pi_2$, the free energy contains
+
+$$F \supset \tfrac{\pi_1}{2}(R_t-\mu_1)^2 + \tfrac{\pi_2}{2}(\mu_1-\mu_2)^2$$
+
+and gradient descent gives
+
+$$-\frac{\partial F}{\partial \mu_1} = \pi_1\delta_1 - \pi_2\delta_2, \qquad
+  -\frac{\partial F}{\partial \mu_2} = \pi_2\delta_2$$
+
+so that $w_1 \propto \pi_1$ and $w_{\downarrow}, w_2 \propto \pi_2$. The sign of each
+$\delta_2$ term is forced rather than chosen: the same error revises $\mu_2$ upward and
+draws $\mu_1$ down (Rao & Ballard 1999; Friston 2005; Bogacz 2017).
+
+What the derivation does **not** fix is the magnitude of $w_{\downarrow}$ relative to
+$w_2$, which is 216 here. Both carry $\pi_2$; their ratio is the separation of timescales
+between the levels (Kiebel et al. 2008), and it is a set value like the others. It is not
+a knife-edge: one at a time, halving or doubling either weight passes every claim except
+`w2 x2` (C6), and the ratio's lower bound is what C6 sets — too small a separation lets
+$\mu_2$ move fast enough that a single session adds too much.
+
 | Weight | Rule | Code (`rrm/model.py`) | Reference |
 |---|---|---|---|
 | $w_1$ | high when surprise over the last few minutes reveals an **increase** in the rate and the current error is positive, low otherwise | `w1_high`, `w1_low` | 0.7, 1/20 |
